@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Vite cache
+.vite/
+
+# Output directories
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env files (if you use them)
+.env
+.env.*.local
+
+# IDE settings
+.vscode/
+.idea/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# MacOS
+*.DS_Store
