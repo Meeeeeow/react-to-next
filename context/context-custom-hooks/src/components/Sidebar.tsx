@@ -1,12 +1,12 @@
-import { useUserContext } from "../context/context";
+import { useAuthContext } from "../context/authContext";
+import { Link } from "react-router-dom"; // If you're using React Router
 
 const Sidebar = () => {
-  const user = useUserContext();
+  const { username } = useAuthContext();
+
   return (
-    <div className="sidebar">
-      <h2>Sidebar</h2>
-      <p>User ID: {user.id}</p>
-      <p>User Name: {user.name}</p>
+    <div className="h-screen w-64 bg-gray-800 text-white flex flex-col p-6">
+      <h2 className="text-2xl font-bold mb-8">Welcome, {username}!</h2>
     </div>
   );
 };
